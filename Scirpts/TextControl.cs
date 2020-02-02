@@ -32,7 +32,6 @@ public class TextControl : MonoBehaviour
         {
             textString.text = dialouge.Substring(0, i);
             yield return null;
-            yield return null;
         }
         textString.text = dialouge;
         yield return null;
