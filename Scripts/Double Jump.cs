@@ -1,3 +1,7 @@
+using Unity;
+/*
+
+
 public class Jump : MonoBehavior {
 
   private float jumpSpeed = 5;
@@ -26,3 +30,4 @@ public class Jump : MonoBehavior {
     }
  }
  
+    */

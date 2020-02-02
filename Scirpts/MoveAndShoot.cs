@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveAndShoot : MonoBehaviour
 {
@@ -23,11 +24,14 @@ public class MoveAndShoot : MonoBehaviour
     private bool isGrounded;
     private float previousX = 0;
 
+    public Slider healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        this.GetComponent<TakeDamage>().enabled = false;
     }
 
     // Update is called once per frame
@@ -40,6 +44,13 @@ public class MoveAndShoot : MonoBehaviour
         else
         {
             isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
+        }
+
+        if (checkPower.GetPower("Health") == true)
+        {
+            healthBar.gameObject.SetActive(true);
+            this.GetComponent<TakeDamage>().enabled = true;
+
         }
 
         float horiz = Input.GetAxis("Horizontal");
