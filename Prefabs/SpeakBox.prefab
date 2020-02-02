@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialouge: HELLO HELLO test test
-  textBox: {fileID: 6505305409928149932, guid: 94de975c62ed44fd08ad31b098b661ee, type: 3}
+  textBox: {fileID: 2065027049183766513, guid: a85f50b2fd26249d392d0903fcdfa4eb, type: 3}
   vanvas: {fileID: 0}
   talkTime: 5
 --- !u!65 &44084767361611664
