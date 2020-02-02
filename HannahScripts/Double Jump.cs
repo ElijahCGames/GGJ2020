@@ -1,4 +1,4 @@
-public class Jump : MonoBehavior {
+/*public class Jump : MonoBehavior {
 
   private float jumpSpeed = 5;
   private Rigidbody rigidbody;
@@ -26,3 +26,4 @@ public class Jump : MonoBehavior {
     }
  }
  
+*/

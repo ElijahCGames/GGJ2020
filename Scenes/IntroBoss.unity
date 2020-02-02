@@ -1414,6 +1414,7 @@ GameObject:
   - component: {fileID: 1064197431}
   - component: {fileID: 1064197430}
   - component: {fileID: 1064197432}
+  - component: {fileID: 1064197433}
   m_Layer: 0
   m_Name: TextManager
   m_TagString: Untagged
@@ -1436,6 +1437,7 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 4a3f865a6a05044f9b751ce93b86e891, type: 2}
+    - {fileID: 11400000, guid: 3a403ddc70e3c458dba1770b1b825ccd, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -1448,6 +1450,21 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1064197433}
+          m_MethodName: ChangeScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Jump
             m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -1482,6 +1499,19 @@ MonoBehaviour:
   textBox: {fileID: 6640688502734327306, guid: 535c4a88f1d4e44ef96f81817139c5db, type: 3}
   vanvas: {fileID: 1841229093}
   talkTime: 3
+--- !u!114 &1064197433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064197429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df41bef063a0845c7a990caf1027b7bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToGoTo: 
 --- !u!1 &1069758736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,28 +2984,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2886756961639270313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2886756961639270317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cbd04852020b4c8abf4ccb3d9db88a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  gravity: 10
-  jumpHeight: 3
-  GroundDistance: 0.98
-  GroundCheck: {fileID: 2886756960383868666}
-  GroundMask:
-    serializedVersion: 2
-    m_Bits: 256
-  checkPower: {fileID: 8312242362747462240, guid: c801041e4ad1246249709eb6c821800a,
-    type: 3}
 --- !u!1 &2886756961639270317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,8 +2995,8 @@ GameObject:
   - component: {fileID: 2886756961639270312}
   - component: {fileID: 2886756961639270319}
   - component: {fileID: 2886756961639270318}
-  - component: {fileID: 2886756961639270313}
   - component: {fileID: 57696364007496620}
+  - component: {fileID: 2886756961639270320}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -3063,3 +3071,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2886756961639270320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886756961639270317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b84d0862648e243e7993c7a2a0df7dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  gravity: 8
+  jumpHeight: 5
+  GroundDistance: 0.98
+  GroundCheck: {fileID: 2886756960383868666}
+  GroundMask:
+    serializedVersion: 2
+    m_Bits: 256
