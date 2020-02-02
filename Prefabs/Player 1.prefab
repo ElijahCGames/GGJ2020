@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2438001238260872367}
   - component: {fileID: 2438001238260872366}
   - component: {fileID: 2438001238260872361}
+  - component: {fileID: 8088087478030020850}
   - component: {fileID: 654901653079255212}
   m_Layer: 0
   m_Name: Player 1
@@ -125,6 +126,20 @@ MonoBehaviour:
     m_Bits: 256
   checkPower: {fileID: 8312242362747462240, guid: c801041e4ad1246249709eb6c821800a,
     type: 3}
+  healthBar: {fileID: 0}
+--- !u!114 &8088087478030020850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2438001238260872365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc10169cc4a22545af9709351b0cf8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 0}
 --- !u!95 &654901653079255212
 Animator:
   serializedVersion: 3

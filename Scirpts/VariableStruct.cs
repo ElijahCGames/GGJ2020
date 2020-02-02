@@ -8,7 +8,8 @@ public class VariableStruct : MonoBehaviour
     {
         {"Jump",false},
         {"Wall",false},
-        {"DJ",false}
+        {"DJ",false},
+        {"Health", false} 
     };
 
     // Start is called before the first frame update

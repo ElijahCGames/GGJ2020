@@ -1,4 +1,7 @@
 /*public class Jump : MonoBehavior {
+using Unity;
+
+public class Jump : MonoBehavior {
 
   private float jumpSpeed = 5;
   private Rigidbody rigidbody;
@@ -25,5 +28,5 @@
         currentJump = 0;
     }
  }
- 
 */
+
