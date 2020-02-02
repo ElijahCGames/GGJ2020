@@ -15,9 +15,9 @@ public class MusicManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(audioSource.time > 20 + interval * 20)
+        if(audioSource.time > 100 + interval * 100)
         {
-            audioSource.time = 0 + interval * 20;
+            audioSource.time = 0 + interval * 100;
         }
     }
 }

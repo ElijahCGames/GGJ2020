@@ -149,7 +149,7 @@ TextureImporter:
         width: 807.25
         height: 747
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,7 +170,7 @@ TextureImporter:
         width: 807
         height: 747
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: monsterspritesheet_2
       rect:
         serializedVersion: 2
-        x: 1614
+        x: 1620
         y: 0
-        width: 807.25
+        width: 813
         height: 747
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: monsterspritesheet_3
       rect:
         serializedVersion: 2
-        x: 2421
+        x: 2440
         y: 0
-        width: 807.25
+        width: 788
         height: 747
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: monsterspritesheet_4
       rect:
         serializedVersion: 2
-        x: 3228
+        x: 3227
         y: 0
-        width: 807.25
+        width: 737
         height: 747
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: monsterspritesheet_5
       rect:
         serializedVersion: 2
-        x: 4035
+        x: 3964
         y: 0
-        width: 807.25
+        width: 811
         height: 747
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,12 +270,12 @@ TextureImporter:
       name: monsterspritesheet_6
       rect:
         serializedVersion: 2
-        x: 4842
+        x: 4775
         y: 0
-        width: 807.25
+        width: 843
         height: 747
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: monsterspritesheet_7
       rect:
         serializedVersion: 2
-        x: 5649
+        x: 5626
         y: 0
-        width: 807.25
+        width: 830
         height: 747
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

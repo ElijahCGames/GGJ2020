@@ -43,7 +43,9 @@ public class MoveAndShoot : MonoBehaviour
         }
         else
         {
-            isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
+            isGrounded = Physics.Raycast(GroundCheck.position, -Vector3.up, GroundDistance, GroundMask)
+                || Physics.Raycast(GroundCheck.position, -Vector3.right, GroundDistance, GroundMask)
+                || Physics.Raycast(GroundCheck.position, -Vector3.left, GroundDistance, GroundMask);
         }
 
         if (checkPower.GetPower("Health") == true)
@@ -75,7 +77,7 @@ public class MoveAndShoot : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * 1.5f * gravity);
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && !isGrounded && /*checkPower.GetPower("DJ") &&*/ hasNotJumped)
+        if (Input.GetKeyDown(KeyCode.W) && !isGrounded && checkPower.GetPower("DJ") && hasNotJumped)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * 2f * gravity);
             hasNotJumped = false;
